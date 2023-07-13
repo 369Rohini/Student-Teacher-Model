@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>this is my userform</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12">
+
+        <form method= "post">
+            {% comment %} {% extends 'trying.html' %} {% endcomment %}
+            {% csrf_token%}
+            
+            <div>
+                <lable for =" ">value1</lable>
+                <input type="text" name="num1" value="{{n1}}" class= "form-control" />
+            </div>
+
+            <div>
+                <lable for =" ">value2</lable>
+                <input type="text" name="num2" value="{{n2}}" class= "form-control" />
+            </div>
+
+            <div pt=2>
+                <button type="submit"> save </button>
+            </div>
+            output
+           <input type="text" value ="{{output}}" />
+           {% comment %} <input type="text" value ="{{result}}" /> {% endcomment %}
+        </form>
+    </div>
+</div>
+    </body>
+</html>
